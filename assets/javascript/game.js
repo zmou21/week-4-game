@@ -61,7 +61,6 @@ $(document).ready(function() {
 			if (true) {
 				var randomNumGen = $("#divImageTwo").html(function () {
 				return crystalTwoValue;
-				//store randomNumCrystal to this button until reset
 				});	
 			}
 			count++;
@@ -76,7 +75,6 @@ $(document).ready(function() {
 			if (crystalThree) {
 				var randomNumGen = $("#divImageThree").html(function () {
 				return crystalThreeValue;
-				//store randomNumCrystal to this button until reset
 				});	
 			}
 			count++;
@@ -107,12 +105,20 @@ $(document).ready(function() {
 // On each click of one of the gems, value is added to the new total
 
 
+	// var counter = totalOne + totalTwo + totalThree + totalFour;	
+	var counter = "Total will go here"
+		if (counter) {
+			$("#counter").html(function () {
+				return counter;
+			});
+		}
+
 
 // if player == randomly generated number then they win (+1)
 
-// if (randomNumGen !== crystalOne) {
-// 	console.log("not equal")
-// }
+	// if (randomNumGen !== crystalOne) {
+	// 	console.log("not equal")
+	// }
 
 
 
