@@ -1,38 +1,88 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-us">
 <head>
 	<title>CrystalCollector Game</title>
 	<meta charset="utf-8">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<style type="text/css">
-		#divImageOne, #divImageTwo, #divImageThree, #divImageFour {
-			width: 500px; 
-			height: 500px; 
-			margin: 10px; 
-			padding: 10px; 
-			background-color: lightblue; 
-			display: inline;
-		}
-	</style>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
 </head>
-<body>
-<!--Random value space reserved here-->
-	<h2 id="randomNumber" style="width: 100px; height: 100px; margin: 10px; color:blue;">Random Value:</h2>
-	<h2 id="win" style="width: 100px; height: 100px; margin: 10px; color:blue;">Win:</h2>
-	<h2 id="loss" style="width: 100px; height: 100px; margin: 10px; color:blue;">Loss:</h2>
-	
+<body style="background-image:url('assets/images/background_lights.jpeg');">
 
-	
-<!--Crystal images reserved here-->	
-	<div class="divImage" value="crystalOne">Image 1</div>
-	<div class="divImage" value="crystalTwo" style="background-color: green;">Image 2</div>
-	<div class="divImage" value="crystalThree" style="background-color: pink;">Image 3</div>
-	<div class="divImage" value="crystalFour" style="background-color: lightgrey;">Image 4</div>
-
-<!--Counter space reserved here-->
-
-	<h2 id="totalScore" style="width: 100px; height: 100px; margin-top: 5%; color:#777; background-color: lightgrey;">Counter:</h2>
+	<div class="container-fluid">
+		<div class="row"> 			<!--Header-->
+			<div class="col-md-12" id="header">
+				<h1>CrystalCollector!</h1>
+			</div>	
+		</div>
+		<div class="row"> 		<!--Row for Win Loss And Target/Users Score-->
+			<div class="col-md-9" id="target">
+				<div class="row"> <!--Target/Users Score-->
+					<div class="col-md-6" id="randomScoreTitle">
+						<h2>Random Value:</h2>
+					</div>
+					<div class="col-md-6" id="userScoreTitle">
+						<h2>Your Score:</h2>
+					</div>					
+				</div>
+				<div class="row"> 
+					<div class="col-md-6">
+						<h2 id="randomNumber">Random Value:</h2>
+					</div>
+					<div class="col-md-6">
+						<h2 id="totalScore">Counter:</h2>
+					</div>						
+				</div>
+			</div>
+			<div class="col-md-3" id="winLoss"> <!--Win/Loss Column-->
+				<h2 id="win" style="width: 100px; height: 100px; margin: 10px; color:blue;">Win:</h2>
+				<h2 id="loss" style="width: 100px; height: 100px; margin: 10px; color:blue;">Loss:</h2>
+			</div>	
+		</div>
+		<div class="row" id="crystals">
+			<div class="col-md-3"> <!--Crystal #1-->
+				<div class="divImage" value="crystalOne">
+					<img src="assets/images/crystal_1.png" alt="Crystal 1">
+				</div>
+			</div>
+			<div class="col-md-3"> <!--Crystal #2-->
+				<div class="divImage" value="crystalTwo">
+					<img src="assets/images/crystal_2.png" alt="Crystal 2">
+				</div>
+			</div>
+			<div class="col-md-3"> <!--Crystal #3-->
+				<div class="divImage" value="crystalThree">
+					<img src="assets/images/crystal_3.png" alt="Crystal 3">
+				</div>
+			</div>
+			<div class="col-md-3"> <!--Crystal #4-->
+				<div class="divImage" value="crystalFour">
+					<img src="assets/images/crystal_4.png" alt="Crystal 4">
+				</div>
+			</div>										
+		</div>	
+		<div class="row" id="rules"> <!--Rules of the game-->
+			<div class="col-md-12">
+				<h2>Rules</h2>
+			</div>
+			<div class="col-md-12">
+				<h4>You will be given a random number at the start of the game.</h4>
+				<h4>There are four crystals above. By clicking on a crystal you will add a specific amount of points to your total score.</h4>
+				<h4>You win the game by matching your total score to the random number, you lose the game if your total score goes above the random number</h4>
+				<h4>The value of each crystal is hidden from you until you click on it.</h4>
+				<h4>Each time when the game starts, the game will change the value of each crystal.</h4>
+			</div>	
+		</div>	
+		<div class="row" id="footer"> <!--Footer-->
+			<div class="col-md-12">
+				<h2>Footer</h2>
+			</div>	
+		</div>						
+	</div>
 
 	<script type="text/javascript" src="assets/javascript/game.js"></script>
+
 </body>
 </html>
