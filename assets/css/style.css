@@ -1,0 +1,82 @@
+/* General styling for Crystal Game */
+body {
+	background-image: url("/assets/images/background_lights.jpeg");
+	opacity: 0.85;
+	color:white;
+}
+
+h2 {
+	font-size: 20px;
+}
+
+/*Styling header*/
+
+h1 {
+	background-color: black;
+	text-align: center;
+
+}
+
+#header {
+	background-color: black;
+	margin: 1% 0 2%; 
+}
+
+/*Styling for rows with Target Score and Wins/Losses*/
+
+#target {
+	background-color: black;
+}
+
+#randomScoreTitle, #userScoreTitle {
+
+}
+
+#randomNumber, #totalScore {
+
+}
+
+#winLoss {
+	background-color: black;
+}
+
+#win, #loss {
+
+}
+
+
+/*Styling for rows with crystal images*/
+
+#divImageOne, #divImageTwo, #divImageThree, #divImageFour {
+	width: 500px; 
+	height: 500px; 
+	margin: 10px; 
+	padding: 10px; 
+	background-color: lightblue; 
+	display: inline;
+}
+
+#crystals{
+	background-color: black;
+
+}
+
+.divImage {
+
+}
+
+/*Styling for rows with rules*/
+
+#rules {
+	background-color: black;
+}
+
+h4 {
+
+}
+
+/*Styling for footer*/
+
+#footer {
+	background-color: black;
+}
