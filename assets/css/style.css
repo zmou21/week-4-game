@@ -1,8 +1,11 @@
 /* General styling for Crystal Game */
 body {
-	background-image: url("/assets/images/background_lights.jpeg");
-	opacity: 0.85;
 	color:white;
+}
+
+.container-fluid {
+	background-color: black;
+	opacity: 0.85;
 }
 
 h2 {
@@ -20,27 +23,46 @@ h1 {
 #header {
 	background-color: black;
 	margin: 1% 0 2%; 
+	padding-bottom: 1%;
 }
 
 /*Styling for rows with Target Score and Wins/Losses*/
 
 #target {
-	background-color: black;
+
+	
 }
 
 #randomScoreTitle, #userScoreTitle {
-
+	background-color: #bbb;
+	color: black;
+	text-align: center;
+	width: 25%;
+	height: 10%;
+	margin: 0 5%;
 }
 
-#randomNumber, #totalScore {
-
+.numbers {
+	text-align: center;
+	margin: 0 5%; 
+	width: 25%;
+	height: 10%;
 }
 
-#winLoss {
-	background-color: black;
+.winsLossTitles {
+	background-color: #bbb;
+	color: black;
+	text-align: center;
+	width: 25%;
+	height: 10%;
+	margin: 0 5%;
 }
 
-#win, #loss {
+.winsLoss {
+	text-align: center;
+	margin: 0 5%; 
+	width: 25%;
+	height: 10%;
 
 }
 
@@ -57,7 +79,9 @@ h1 {
 }
 
 #crystals{
-	background-color: black;
+	padding: 1% 15% 2%; 
+	margin: 4% 2% 2%;
+	border-bottom: 1px solid #eee;
 
 }
 
@@ -65,18 +89,50 @@ h1 {
 
 }
 
+button {
+  display: inline-block;
+  padding: 4px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #777;
+  border: none;
+  border-radius: 60px;
+  box-shadow: 0 2px #999;
+}
+
+button:hover {background-color: #eee}
+
+button:active {
+  background-color: lightblue;
+  box-shadow: 0 2px #666;
+  transform: translateY(4px);
+}
+
 /*Styling for rows with rules*/
 
 #rules {
-	background-color: black;
+	margin: 1% 1%;
+	background-color: #bbb;
+	color: black;
 }
 
-h4 {
 
+#rulesH2 {
+	text-size: 50px;
+	text-decoration: underline;
 }
 
 /*Styling for footer*/
 
 #footer {
-	background-color: black;
+	text-align: center;
+	padding: 5% 0 1%;
+}
+
+h5 {
+
 }
