@@ -23,10 +23,13 @@ $(document).ready(function() {
 	function winLoseTally() {
 		if (totalScore == randomNumber) {
 			wins++;
-			start();	
+			alert("You won!");
+			start();
+
 		}
 		if (totalScore > randomNumber) {
 			losses++;
+			alert("You lose!");
 			start();			
 		}	
 	}
