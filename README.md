@@ -1,5 +1,6 @@
 # week-4-game
-Crystal Collector's Game using jQuery
+
+**Description:** Crystal Collector's Game using jQuery. 
 
 Rules of the game:
 
@@ -16,7 +17,7 @@ Rules of the game:
 
 5- The game restarts whenever the player wins or loses.
 
-Option 1 Game design notes
+Game design notes:
 
 The random number shown at the start of the game should be between 19 - 120.
 Each crystal should have a random hidden value between 1 - 12.
